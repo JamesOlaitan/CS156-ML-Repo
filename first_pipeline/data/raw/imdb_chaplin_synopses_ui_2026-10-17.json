@@ -1,0 +1,21 @@
+{
+  "collected_on": "2026-10-17",
+  "rows": [
+    {
+      "imdb_id": "tt0027977",
+      "title": "Modern Times",
+      "year": "1936",
+      "synopsis": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
+      "source_url": "https://www.imdb.com/title/tt0027977/",
+      "collection_method": "Rendered IMDb title-page plot-xl DOM; synopsis only"
+    },
+    {
+      "imdb_id": "tt0032553",
+      "title": "The Great Dictator",
+      "year": "1940",
+      "synopsis": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+      "source_url": "https://www.imdb.com/title/tt0032553/",
+      "collection_method": "Rendered IMDb title-page plot-xl DOM; synopsis only"
+    }
+  ]
+}

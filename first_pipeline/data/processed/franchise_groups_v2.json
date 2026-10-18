@@ -1,0 +1,3602 @@
+{
+  "manifest_version": 2,
+  "scope": "Known related-work grouping sensitivity for the 204 eligible movie/series IDs after explicitly restoring Resident Evil (2026). Partial grouping; not an exhaustive unseen-franchise guarantee.",
+  "eligible_ids_source": "data/processed/model_dataset_v2.csv",
+  "metadata_source": "data/interim/title_metadata_v2.csv",
+  "decision_policy": [
+    "Only manual direct-film-series, repeated-character, adaptation-family or spin-off relations in the reviewed 30 rules are grouped.",
+    "Group construction and rule selection use titles/plot evidence only; no liking category, model performance, genre performance or error pattern is used.",
+    "Union overlapping accepted relation rules transitively, then give every unassigned eligible IMDb ID its own unique singleton group.",
+    "Distinct movies and series remain distinct rows; the manifest only constrains fold co-location.",
+    "The two Chaplin films remain separate singleton groups because a shared director/performer alone does not establish a franchise.",
+    "Keep the three-film Superman/Justice League group separate from the Dark Knight trilogy. Thor, Captain America, Black Panther, Deadpool, X-Men and Spider-Man retain their narrow reviewed series groups; do not unite all Marvel/DC works merely by studio, genre or a known broad universe."
+  ],
+  "group_by_record_id": {
+    "tt0027977": "singleton:tt0027977",
+    "tt0032553": "singleton:tt0032553",
+    "tt0055928": "related:james-bond",
+    "tt0057076": "related:james-bond",
+    "tt0082198": "related:conan-the",
+    "tt0082398": "related:james-bond",
+    "tt0087078": "related:conan-the",
+    "tt0092099": "related:top-gun",
+    "tt0093428": "related:james-bond",
+    "tt0097742": "related:james-bond",
+    "tt0099785": "related:home-alone",
+    "tt0103064": "related:terminator",
+    "tt0104431": "related:home-alone",
+    "tt0112573": "singleton:tt0112573",
+    "tt0113189": "related:james-bond",
+    "tt0116629": "singleton:tt0116629",
+    "tt0119303": "related:home-alone",
+    "tt0119654": "related:men-in-black",
+    "tt0120338": "singleton:tt0120338",
+    "tt0120591": "singleton:tt0120591",
+    "tt0120616": "singleton:tt0120616",
+    "tt0120804": "related:resident-evil-adaptations",
+    "tt0120815": "singleton:tt0120815",
+    "tt0120912": "related:men-in-black",
+    "tt0146316": "singleton:tt0146316",
+    "tt0172495": "singleton:tt0172495",
+    "tt0181852": "related:terminator",
+    "tt0285331": "singleton:tt0285331",
+    "tt0293429": "singleton:tt0293429",
+    "tt0297162": "singleton:tt0297162",
+    "tt0317303": "singleton:tt0317303",
+    "tt0319262": "singleton:tt0319262",
+    "tt0335345": "singleton:tt0335345",
+    "tt0368578": "singleton:tt0368578",
+    "tt0372784": "related:dark-knight-trilogy",
+    "tt0376994": "related:x-men",
+    "tt0381061": "related:james-bond",
+    "tt0398808": "singleton:tt0398808",
+    "tt0437800": "singleton:tt0437800",
+    "tt0448115": "related:shazam",
+    "tt0448157": "singleton:tt0448157",
+    "tt0451279": "related:wonder-woman",
+    "tt0455275": "singleton:tt0455275",
+    "tt0458339": "related:captain-america",
+    "tt0468569": "related:dark-knight-trilogy",
+    "tt0473075": "singleton:tt0473075",
+    "tt0770828": "related:dc-superman-justice-league",
+    "tt0790724": "related:jack-reacher-reacher",
+    "tt0816692": "singleton:tt0816692",
+    "tt0830515": "related:james-bond",
+    "tt0844653": "singleton:tt0844653",
+    "tt0903747": "singleton:tt0903747",
+    "tt0944835": "singleton:tt0944835",
+    "tt0944947": "related:game-of-thrones-house-of-the-dragon",
+    "tt0993840": "singleton:tt0993840",
+    "tt0993846": "singleton:tt0993846",
+    "tt10048342": "singleton:tt10048342",
+    "tt10062292": "singleton:tt10062292",
+    "tt10151854": "related:shazam",
+    "tt10293938": "singleton:tt10293938",
+    "tt10366206": "related:john-wick",
+    "tt10648342": "related:thor",
+    "tt1074638": "related:james-bond",
+    "tt10813940": "singleton:tt10813940",
+    "tt10872600": "related:spider-man",
+    "tt10919420": "singleton:tt10919420",
+    "tt11083552": "singleton:tt11083552",
+    "tt11198330": "related:game-of-thrones-house-of-the-dragon",
+    "tt11286314": "singleton:tt11286314",
+    "tt1133985": "singleton:tt1133985",
+    "tt1155076": "singleton:tt1155076",
+    "tt11564570": "singleton:tt11564570",
+    "tt1160419": "related:dune",
+    "tt1190080": "singleton:tt1190080",
+    "tt1190634": "related:the-boys-gen-v",
+    "tt1199099": "singleton:tt1199099",
+    "tt12263384": "related:extraction",
+    "tt12324366": "singleton:tt12324366",
+    "tt12361974": "related:dc-superman-justice-league",
+    "tt1267297": "singleton:tt1267297",
+    "tt1270797": "related:venom",
+    "tt1270798": "related:x-men",
+    "tt1295085": "singleton:tt1295085",
+    "tt1312171": "singleton:tt1312171",
+    "tt13159924": "related:the-boys-gen-v",
+    "tt1320253": "singleton:tt1320253",
+    "tt1340138": "related:terminator",
+    "tt13406094": "singleton:tt13406094",
+    "tt13443470": "singleton:tt13443470",
+    "tt1345836": "related:dark-knight-trilogy",
+    "tt1375666": "singleton:tt1375666",
+    "tt1396484": "related:it",
+    "tt1409024": "related:men-in-black",
+    "tt14169960": "singleton:tt14169960",
+    "tt1424310": "singleton:tt1424310",
+    "tt1431045": "related:deadpool",
+    "tt1457767": "related:the-conjuring",
+    "tt1462764": "singleton:tt1462764",
+    "tt1485796": "singleton:tt1485796",
+    "tt15239678": "related:dune",
+    "tt15398776": "singleton:tt15398776",
+    "tt1598778": "singleton:tt1598778",
+    "tt1631867": "singleton:tt1631867",
+    "tt1632701": "singleton:tt1632701",
+    "tt16366836": "related:venom",
+    "tt1649418": "singleton:tt1649418",
+    "tt1670345": "related:now-you-see-me",
+    "tt1745960": "related:top-gun",
+    "tt1751634": "singleton:tt1751634",
+    "tt1790864": "singleton:tt1790864",
+    "tt1825683": "related:black-panther",
+    "tt1837492": "singleton:tt1837492",
+    "tt1843866": "related:captain-america",
+    "tt1856010": "singleton:tt1856010",
+    "tt1877832": "related:x-men",
+    "tt19244304": "related:it",
+    "tt2119532": "singleton:tt2119532",
+    "tt22084616": "related:spider-man",
+    "tt2231461": "singleton:tt2231461",
+    "tt2250912": "related:spider-man",
+    "tt2283336": "related:men-in-black",
+    "tt2283362": "related:jumanji",
+    "tt2302755": "singleton:tt2302755",
+    "tt2334879": "singleton:tt2334879",
+    "tt2379713": "related:james-bond",
+    "tt2382320": "related:james-bond",
+    "tt2403776": "singleton:tt2403776",
+    "tt2404233": "singleton:tt2404233",
+    "tt2442560": "singleton:tt2442560",
+    "tt2531336": "singleton:tt2531336",
+    "tt2632424": "singleton:tt2632424",
+    "tt2802144": "related:kingsman",
+    "tt2872732": "singleton:tt2872732",
+    "tt2911666": "related:john-wick",
+    "tt2975590": "related:dc-superman-justice-league",
+    "tt3007572": "singleton:tt3007572",
+    "tt3076658": "singleton:tt3076658",
+    "tt3107288": "singleton:tt3107288",
+    "tt3110958": "related:now-you-see-me",
+    "tt31193180": "singleton:tt31193180",
+    "tt31450459": "singleton:tt31450459",
+    "tt32393988": "singleton:tt32393988",
+    "tt33764258": "singleton:tt33764258",
+    "tt3385516": "related:x-men",
+    "tt3498820": "related:captain-america",
+    "tt3501632": "related:thor",
+    "tt35538033": "related:resident-evil-adaptations",
+    "tt3581920": "singleton:tt3581920",
+    "tt37510326": "singleton:tt37510326",
+    "tt4052886": "singleton:tt4052886",
+    "tt4154664": "singleton:tt4154664",
+    "tt4154796": "singleton:tt4154796",
+    "tt4270492": "singleton:tt4270492",
+    "tt4425200": "related:john-wick",
+    "tt4574334": "singleton:tt4574334",
+    "tt4649466": "related:kingsman",
+    "tt4712810": "related:now-you-see-me",
+    "tt4912910": "related:mission-impossible",
+    "tt4919268": "singleton:tt4919268",
+    "tt5057054": "singleton:tt5057054",
+    "tt5071412": "singleton:tt5071412",
+    "tt5090568": "singleton:tt5090568",
+    "tt5180504": "singleton:tt5180504",
+    "tt5420376": "singleton:tt5420376",
+    "tt5433138": "related:fast-saga-hobbs-shaw",
+    "tt5463162": "related:deadpool",
+    "tt5758778": "singleton:tt5758778",
+    "tt6076336": "singleton:tt6076336",
+    "tt6128300": "singleton:tt6128300",
+    "tt6146586": "related:john-wick",
+    "tt6263850": "related:deadpool",
+    "tt6320628": "related:spider-man",
+    "tt6468322": "singleton:tt6468322",
+    "tt6472976": "singleton:tt6472976",
+    "tt6528290": "singleton:tt6528290",
+    "tt6565702": "related:x-men",
+    "tt6723592": "singleton:tt6723592",
+    "tt6806448": "related:fast-saga-hobbs-shaw",
+    "tt7018644": "singleton:tt7018644",
+    "tt7069210": "related:the-conjuring",
+    "tt7097896": "related:venom",
+    "tt7126948": "related:wonder-woman",
+    "tt7221388": "singleton:tt7221388",
+    "tt7286456": "singleton:tt7286456",
+    "tt7335184": "singleton:tt7335184",
+    "tt7349950": "related:it",
+    "tt7462410": "singleton:tt7462410",
+    "tt7550000": "singleton:tt7550000",
+    "tt7556122": "singleton:tt7556122",
+    "tt7660850": "singleton:tt7660850",
+    "tt7767422": "singleton:tt7767422",
+    "tt7975244": "related:jumanji",
+    "tt7991608": "singleton:tt7991608",
+    "tt8106534": "singleton:tt8106534",
+    "tt8354062": "singleton:tt8354062",
+    "tt8740790": "singleton:tt8740790",
+    "tt8936646": "related:extraction",
+    "tt8962124": "singleton:tt8962124",
+    "tt9114286": "related:black-panther",
+    "tt9140554": "singleton:tt9140554",
+    "tt9140560": "singleton:tt9140560",
+    "tt9288030": "related:jack-reacher-reacher",
+    "tt9419884": "singleton:tt9419884",
+    "tt9603212": "related:mission-impossible"
+  },
+  "groups": [
+    {
+      "group_id": "related:black-panther",
+      "name": "Black Panther",
+      "member_ids": [
+        "tt1825683",
+        "tt9114286"
+      ],
+      "members": [
+        {
+          "record_id": "tt1825683",
+          "title": "Black Panther",
+          "year": "2018"
+        },
+        {
+          "record_id": "tt9114286",
+          "title": "Black Panther: Wakanda Forever",
+          "year": "2022"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Black Panther",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1825683",
+            "tt9114286"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:captain-america",
+      "name": "Captain America",
+      "member_ids": [
+        "tt0458339",
+        "tt1843866",
+        "tt3498820"
+      ],
+      "members": [
+        {
+          "record_id": "tt0458339",
+          "title": "Captain America: The First Avenger",
+          "year": "2011"
+        },
+        {
+          "record_id": "tt1843866",
+          "title": "Captain America: The Winter Soldier",
+          "year": "2014"
+        },
+        {
+          "record_id": "tt3498820",
+          "title": "Captain America: Civil War",
+          "year": "2016"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Captain America",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt3498820",
+            "tt0458339",
+            "tt1843866"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:conan-the",
+      "name": "Conan the",
+      "member_ids": [
+        "tt0082198",
+        "tt0087078"
+      ],
+      "members": [
+        {
+          "record_id": "tt0082198",
+          "title": "Conan the Barbarian",
+          "year": "1982"
+        },
+        {
+          "record_id": "tt0087078",
+          "title": "Conan the Destroyer",
+          "year": "1984"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Conan the",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0082198",
+            "tt0087078"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:dark-knight-trilogy",
+      "name": "Dark Knight trilogy",
+      "member_ids": [
+        "tt0372784",
+        "tt0468569",
+        "tt1345836"
+      ],
+      "members": [
+        {
+          "record_id": "tt0372784",
+          "title": "Batman Begins",
+          "year": "2005"
+        },
+        {
+          "record_id": "tt0468569",
+          "title": "The Dark Knight",
+          "year": "2008"
+        },
+        {
+          "record_id": "tt1345836",
+          "title": "The Dark Knight Rises",
+          "year": "2012"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Dark Knight trilogy",
+          "rationale": "Manual direct-film-series judgment: Batman Begins, The Dark Knight and The Dark Knight Rises form the reviewed trilogy group. Shared Batman character alone is not used to unite this with the separate Superman/Justice League group.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0372784",
+            "tt0468569",
+            "tt1345836"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        },
+        {
+          "url": "https://www.dc.com/blog/2021/01/13/binging-the-bat-hbo-max-adds-new-batman-titles-to-its-lineup",
+          "supports": "Official DC article explicitly lists Batman Begins, The Dark Knight and The Dark Knight Rises as the complete Nolan trilogy.",
+          "checked_on": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "group_id": "related:dc-superman-justice-league",
+      "name": "DC Superman / Justice League",
+      "member_ids": [
+        "tt0770828",
+        "tt12361974",
+        "tt2975590"
+      ],
+      "members": [
+        {
+          "record_id": "tt0770828",
+          "title": "Man of Steel",
+          "year": "2013"
+        },
+        {
+          "record_id": "tt12361974",
+          "title": "Zack Snyder's Justice League",
+          "year": "2021"
+        },
+        {
+          "record_id": "tt2975590",
+          "title": "Batman v Superman: Dawn of Justice",
+          "year": "2016"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "DC Superman / Justice League candidates",
+          "rationale": "Manual direct-character/adaptation judgment: Man of Steel, Batman v Superman and Zack Snyder Justice League share the Superman/Justice League continuity. Keep this three-film group separate from the Dark Knight trilogy; do not extrapolate to every DC title.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt2975590",
+            "tt0770828",
+            "tt12361974"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        },
+        {
+          "url": "https://www.dc.com/blog/2023/04/13/taking-flight-twelve-moments-that-defined-superman",
+          "supports": "Official DC article describes Man of Steel and its two Snyder sequels, Batman v Superman and Zack Snyder Justice League.",
+          "checked_on": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "group_id": "related:deadpool",
+      "name": "Deadpool",
+      "member_ids": [
+        "tt1431045",
+        "tt5463162",
+        "tt6263850"
+      ],
+      "members": [
+        {
+          "record_id": "tt1431045",
+          "title": "Deadpool",
+          "year": "2016"
+        },
+        {
+          "record_id": "tt5463162",
+          "title": "Deadpool 2",
+          "year": "2018"
+        },
+        {
+          "record_id": "tt6263850",
+          "title": "Deadpool & Wolverine",
+          "year": "2024"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Deadpool",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1431045",
+            "tt6263850",
+            "tt5463162"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:dune",
+      "name": "Dune",
+      "member_ids": [
+        "tt1160419",
+        "tt15239678"
+      ],
+      "members": [
+        {
+          "record_id": "tt1160419",
+          "title": "Dune",
+          "year": "2021"
+        },
+        {
+          "record_id": "tt15239678",
+          "title": "Dune: Part Two",
+          "year": "2024"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Dune",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1160419",
+            "tt15239678"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:extraction",
+      "name": "Extraction",
+      "member_ids": [
+        "tt12263384",
+        "tt8936646"
+      ],
+      "members": [
+        {
+          "record_id": "tt12263384",
+          "title": "Extraction II",
+          "year": "2023"
+        },
+        {
+          "record_id": "tt8936646",
+          "title": "Extraction",
+          "year": "2020"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Extraction",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt8936646",
+            "tt12263384"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:fast-saga-hobbs-shaw",
+      "name": "Fast saga / Hobbs & Shaw",
+      "member_ids": [
+        "tt5433138",
+        "tt6806448"
+      ],
+      "members": [
+        {
+          "record_id": "tt5433138",
+          "title": "F9: The Fast Saga",
+          "year": "2021"
+        },
+        {
+          "record_id": "tt6806448",
+          "title": "Fast & Furious Presents: Hobbs & Shaw",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Fast saga / Hobbs & Shaw",
+          "rationale": "Shared Fast franchise wording in full titles suggests a related-film review group.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt5433138",
+            "tt6806448"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:game-of-thrones-house-of-the-dragon",
+      "name": "Game of Thrones / House of the Dragon",
+      "member_ids": [
+        "tt0944947",
+        "tt11198330"
+      ],
+      "members": [
+        {
+          "record_id": "tt0944947",
+          "title": "Game of Thrones",
+          "year": "2011"
+        },
+        {
+          "record_id": "tt11198330",
+          "title": "House of the Dragon",
+          "year": "2022"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Game of Thrones / House of the Dragon",
+          "rationale": "Manual spin-off relationship judgment, supported by the House of the Dragon description naming House Targaryen and Daenerys Targaryen. Group the two series, retaining separate series observations.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0944947",
+            "tt11198330"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        },
+        {
+          "url": "https://www.hbo.com/series/a-z",
+          "supports": "Official HBO listing identifies House of the Dragon as a story of House Targaryen set before Game of Thrones.",
+          "checked_on": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "group_id": "related:home-alone",
+      "name": "Home Alone",
+      "member_ids": [
+        "tt0099785",
+        "tt0104431",
+        "tt0119303"
+      ],
+      "members": [
+        {
+          "record_id": "tt0099785",
+          "title": "Home Alone",
+          "year": "1990"
+        },
+        {
+          "record_id": "tt0104431",
+          "title": "Home Alone 2: Lost in New York",
+          "year": "1992"
+        },
+        {
+          "record_id": "tt0119303",
+          "title": "Home Alone 3",
+          "year": "1997"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Home Alone",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0099785",
+            "tt0104431",
+            "tt0119303"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:it",
+      "name": "It",
+      "member_ids": [
+        "tt1396484",
+        "tt19244304",
+        "tt7349950"
+      ],
+      "members": [
+        {
+          "record_id": "tt1396484",
+          "title": "It",
+          "year": "2017"
+        },
+        {
+          "record_id": "tt19244304",
+          "title": "It: Welcome to Derry",
+          "year": "2025"
+        },
+        {
+          "record_id": "tt7349950",
+          "title": "It: Chapter Two",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "It",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1396484",
+            "tt7349950",
+            "tt19244304"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:jack-reacher-reacher",
+      "name": "Jack Reacher / Reacher",
+      "member_ids": [
+        "tt0790724",
+        "tt9288030"
+      ],
+      "members": [
+        {
+          "record_id": "tt0790724",
+          "title": "Jack Reacher",
+          "year": "2012"
+        },
+        {
+          "record_id": "tt9288030",
+          "title": "Reacher",
+          "year": "2022"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Jack Reacher / Reacher",
+          "rationale": "Manual adaptation-family judgment: the Jack Reacher film and Reacher series adapt the same named character. Different actors or formats do not make this shared-character relation disappear; retain separate works.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0790724",
+            "tt9288030"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:james-bond",
+      "name": "James Bond",
+      "member_ids": [
+        "tt0055928",
+        "tt0057076",
+        "tt0082398",
+        "tt0093428",
+        "tt0097742",
+        "tt0113189",
+        "tt0381061",
+        "tt0830515",
+        "tt1074638",
+        "tt2379713",
+        "tt2382320"
+      ],
+      "members": [
+        {
+          "record_id": "tt0055928",
+          "title": "Dr. No",
+          "year": "1962"
+        },
+        {
+          "record_id": "tt0057076",
+          "title": "From Russia with Love",
+          "year": "1963"
+        },
+        {
+          "record_id": "tt0082398",
+          "title": "For Your Eyes Only",
+          "year": "1981"
+        },
+        {
+          "record_id": "tt0093428",
+          "title": "The Living Daylights",
+          "year": "1987"
+        },
+        {
+          "record_id": "tt0097742",
+          "title": "Licence to Kill",
+          "year": "1989"
+        },
+        {
+          "record_id": "tt0113189",
+          "title": "GoldenEye",
+          "year": "1995"
+        },
+        {
+          "record_id": "tt0381061",
+          "title": "Casino Royale",
+          "year": "2006"
+        },
+        {
+          "record_id": "tt0830515",
+          "title": "Quantum of Solace",
+          "year": "2008"
+        },
+        {
+          "record_id": "tt1074638",
+          "title": "Skyfall",
+          "year": "2012"
+        },
+        {
+          "record_id": "tt2379713",
+          "title": "Spectre",
+          "year": "2015"
+        },
+        {
+          "record_id": "tt2382320",
+          "title": "No Time to Die",
+          "year": "2021"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "James Bond candidates",
+          "rationale": "Ten member descriptions explicitly name James Bond. The official James Bond 007 site confirms Dr. No (1962) is the first 007 film, supporting inclusion of tt0055928 in the same Bond relation group.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.007.com/dr-no-companion-book-announced/",
+          "supports": "Dr. No (1962) is the first 007 film; official franchise source.",
+          "checked_on": "2026-10-17"
+        },
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0055928",
+            "tt0057076",
+            "tt0082398",
+            "tt0381061",
+            "tt0113189",
+            "tt0097742",
+            "tt2382320",
+            "tt0830515",
+            "tt1074638",
+            "tt2379713",
+            "tt0093428"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:john-wick",
+      "name": "John Wick",
+      "member_ids": [
+        "tt10366206",
+        "tt2911666",
+        "tt4425200",
+        "tt6146586"
+      ],
+      "members": [
+        {
+          "record_id": "tt10366206",
+          "title": "John Wick: Chapter 4",
+          "year": "2023"
+        },
+        {
+          "record_id": "tt2911666",
+          "title": "John Wick",
+          "year": "2014"
+        },
+        {
+          "record_id": "tt4425200",
+          "title": "John Wick: Chapter 2",
+          "year": "2017"
+        },
+        {
+          "record_id": "tt6146586",
+          "title": "John Wick: Chapter 3 - Parabellum",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "John Wick",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt2911666",
+            "tt4425200",
+            "tt6146586",
+            "tt10366206"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:jumanji",
+      "name": "Jumanji",
+      "member_ids": [
+        "tt2283362",
+        "tt7975244"
+      ],
+      "members": [
+        {
+          "record_id": "tt2283362",
+          "title": "Jumanji: Welcome to the Jungle",
+          "year": "2017"
+        },
+        {
+          "record_id": "tt7975244",
+          "title": "Jumanji: The Next Level",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Jumanji",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt7975244",
+            "tt2283362"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:kingsman",
+      "name": "Kingsman",
+      "member_ids": [
+        "tt2802144",
+        "tt4649466"
+      ],
+      "members": [
+        {
+          "record_id": "tt2802144",
+          "title": "Kingsman: The Secret Service",
+          "year": "2014"
+        },
+        {
+          "record_id": "tt4649466",
+          "title": "Kingsman: The Golden Circle",
+          "year": "2017"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Kingsman",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt4649466",
+            "tt2802144"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:men-in-black",
+      "name": "Men in Black",
+      "member_ids": [
+        "tt0119654",
+        "tt0120912",
+        "tt1409024",
+        "tt2283336"
+      ],
+      "members": [
+        {
+          "record_id": "tt0119654",
+          "title": "Men in Black",
+          "year": "1997"
+        },
+        {
+          "record_id": "tt0120912",
+          "title": "Men in Black II",
+          "year": "2002"
+        },
+        {
+          "record_id": "tt1409024",
+          "title": "Men in Black 3",
+          "year": "2012"
+        },
+        {
+          "record_id": "tt2283336",
+          "title": "Men in Black: International",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Men in Black",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0119654",
+            "tt1409024",
+            "tt0120912",
+            "tt2283336"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:mission-impossible",
+      "name": "Mission: Impossible",
+      "member_ids": [
+        "tt4912910",
+        "tt9603212"
+      ],
+      "members": [
+        {
+          "record_id": "tt4912910",
+          "title": "Mission: Impossible - Fallout",
+          "year": "2018"
+        },
+        {
+          "record_id": "tt9603212",
+          "title": "Mission: Impossible - Dead Reckoning Part One",
+          "year": "2023"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Mission: Impossible",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt9603212",
+            "tt4912910"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:now-you-see-me",
+      "name": "Now You See Me",
+      "member_ids": [
+        "tt1670345",
+        "tt3110958",
+        "tt4712810"
+      ],
+      "members": [
+        {
+          "record_id": "tt1670345",
+          "title": "Now You See Me",
+          "year": "2013"
+        },
+        {
+          "record_id": "tt3110958",
+          "title": "Now You See Me 2",
+          "year": "2016"
+        },
+        {
+          "record_id": "tt4712810",
+          "title": "Now You See Me: Now You Don't",
+          "year": "2025"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Now You See Me",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1670345",
+            "tt3110958",
+            "tt4712810"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:resident-evil-adaptations",
+      "name": "Resident Evil adaptations",
+      "member_ids": [
+        "tt0120804",
+        "tt35538033"
+      ],
+      "members": [
+        {
+          "record_id": "tt0120804",
+          "title": "Resident Evil",
+          "year": "2002"
+        },
+        {
+          "record_id": "tt35538033",
+          "title": "Resident Evil",
+          "year": "2026"
+        }
+      ],
+      "relation": "Conservative same-property adaptation-family group for two distinct Resident Evil films; no assertion that they share film continuity and no identity/label merge.",
+      "relation_rules": [
+        {
+          "rule_name": "Resident Evil adaptations",
+          "rationale": "Both observed IMDb identities have the Resident Evil title and outbreak/survival-horror descriptions. The user explicitly confirmed that both distinct films were watched. Keep this known same-property adaptation relation in the same validation fold; grouping does not depend on their liking values.",
+          "basis": "Manual title/property adaptation-family judgment using observed title/plot metadata, applied before revised-data fits."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata_all_observed.csv",
+          "imdb_ids": [
+            "tt0120804",
+            "tt35538033"
+          ],
+          "supports": "Observed separate 2002 and 2026 IMDb title identities, years and plot text."
+        }
+      ]
+    },
+    {
+      "group_id": "related:shazam",
+      "name": "Shazam!",
+      "member_ids": [
+        "tt0448115",
+        "tt10151854"
+      ],
+      "members": [
+        {
+          "record_id": "tt0448115",
+          "title": "Shazam!",
+          "year": "2019"
+        },
+        {
+          "record_id": "tt10151854",
+          "title": "Shazam! Fury of the Gods",
+          "year": "2023"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Shazam!",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0448115",
+            "tt10151854"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:spider-man",
+      "name": "Spider-Man",
+      "member_ids": [
+        "tt10872600",
+        "tt22084616",
+        "tt2250912",
+        "tt6320628"
+      ],
+      "members": [
+        {
+          "record_id": "tt10872600",
+          "title": "Spider-Man: No Way Home",
+          "year": "2021"
+        },
+        {
+          "record_id": "tt22084616",
+          "title": "Spider-Man: Brand New Day",
+          "year": "2026"
+        },
+        {
+          "record_id": "tt2250912",
+          "title": "Spider-Man: Homecoming",
+          "year": "2017"
+        },
+        {
+          "record_id": "tt6320628",
+          "title": "Spider-Man: Far from Home",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Spider-Man",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt22084616",
+            "tt6320628",
+            "tt2250912",
+            "tt10872600"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:terminator",
+      "name": "Terminator",
+      "member_ids": [
+        "tt0103064",
+        "tt0181852",
+        "tt1340138"
+      ],
+      "members": [
+        {
+          "record_id": "tt0103064",
+          "title": "Terminator 2: Judgment Day",
+          "year": "1991"
+        },
+        {
+          "record_id": "tt0181852",
+          "title": "Terminator 3: Rise of the Machines",
+          "year": "2003"
+        },
+        {
+          "record_id": "tt1340138",
+          "title": "Terminator Genisys",
+          "year": "2015"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Terminator",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0103064",
+            "tt0181852",
+            "tt1340138"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:the-boys-gen-v",
+      "name": "The Boys / Gen V",
+      "member_ids": [
+        "tt1190634",
+        "tt13159924"
+      ],
+      "members": [
+        {
+          "record_id": "tt1190634",
+          "title": "The Boys",
+          "year": "2019"
+        },
+        {
+          "record_id": "tt13159924",
+          "title": "Gen V",
+          "year": "2023"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "The Boys / Gen V",
+          "rationale": "Gen V synopsis explicitly says it comes from The Boys; source text supplies relation evidence.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1190634",
+            "tt13159924"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/entertainment/the-boys-gen-v-trailer",
+          "supports": "Official Amazon article explicitly identifies Gen V as a The Boys spin-off.",
+          "checked_on": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "group_id": "related:the-conjuring",
+      "name": "The Conjuring",
+      "member_ids": [
+        "tt1457767",
+        "tt7069210"
+      ],
+      "members": [
+        {
+          "record_id": "tt1457767",
+          "title": "The Conjuring",
+          "year": "2013"
+        },
+        {
+          "record_id": "tt7069210",
+          "title": "The Conjuring: The Devil Made Me Do It",
+          "year": "2021"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "The Conjuring",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1457767",
+            "tt7069210"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:thor",
+      "name": "Thor",
+      "member_ids": [
+        "tt10648342",
+        "tt3501632"
+      ],
+      "members": [
+        {
+          "record_id": "tt10648342",
+          "title": "Thor: Love and Thunder",
+          "year": "2022"
+        },
+        {
+          "record_id": "tt3501632",
+          "title": "Thor: Ragnarok",
+          "year": "2017"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Thor",
+          "rationale": "Explicit Thor title prefix; two distinct films assigned as one related-work validation group, not an identity merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt3501632",
+            "tt10648342"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:top-gun",
+      "name": "Top Gun",
+      "member_ids": [
+        "tt0092099",
+        "tt1745960"
+      ],
+      "members": [
+        {
+          "record_id": "tt0092099",
+          "title": "Top Gun",
+          "year": "1986"
+        },
+        {
+          "record_id": "tt1745960",
+          "title": "Top Gun: Maverick",
+          "year": "2022"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Top Gun",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0092099",
+            "tt1745960"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:venom",
+      "name": "Venom",
+      "member_ids": [
+        "tt1270797",
+        "tt16366836",
+        "tt7097896"
+      ],
+      "members": [
+        {
+          "record_id": "tt1270797",
+          "title": "Venom",
+          "year": "2018"
+        },
+        {
+          "record_id": "tt16366836",
+          "title": "Venom: The Last Dance",
+          "year": "2024"
+        },
+        {
+          "record_id": "tt7097896",
+          "title": "Venom: Let There Be Carnage",
+          "year": "2021"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Venom",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt1270797",
+            "tt7097896",
+            "tt16366836"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:wonder-woman",
+      "name": "Wonder Woman",
+      "member_ids": [
+        "tt0451279",
+        "tt7126948"
+      ],
+      "members": [
+        {
+          "record_id": "tt0451279",
+          "title": "Wonder Woman",
+          "year": "2017"
+        },
+        {
+          "record_id": "tt7126948",
+          "title": "Wonder Woman 1984",
+          "year": "2020"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "Wonder Woman",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt0451279",
+            "tt7126948"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "related:x-men",
+      "name": "X-Men",
+      "member_ids": [
+        "tt0376994",
+        "tt1270798",
+        "tt1877832",
+        "tt3385516",
+        "tt6565702"
+      ],
+      "members": [
+        {
+          "record_id": "tt0376994",
+          "title": "X-Men: The Last Stand",
+          "year": "2006"
+        },
+        {
+          "record_id": "tt1270798",
+          "title": "X-Men: First Class",
+          "year": "2011"
+        },
+        {
+          "record_id": "tt1877832",
+          "title": "X-Men: Days of Future Past",
+          "year": "2014"
+        },
+        {
+          "record_id": "tt3385516",
+          "title": "X-Men: Apocalypse",
+          "year": "2016"
+        },
+        {
+          "record_id": "tt6565702",
+          "title": "X-Men: Dark Phoenix",
+          "year": "2019"
+        }
+      ],
+      "relation": "Union of reviewed direct series, character, adaptation or spin-off relation rules. All constituent works remain distinct observations.",
+      "relation_rules": [
+        {
+          "rule_name": "X-Men",
+          "rationale": "Shared explicit title prefix; reviewed related-work validation group, not a duplicate merge.",
+          "basis": "Manual relationship judgment using titles and observed plot descriptions; no outcome values used."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/interim/title_metadata.csv",
+          "imdb_ids": [
+            "tt3385516",
+            "tt6565702",
+            "tt1877832",
+            "tt1270798",
+            "tt0376994"
+          ],
+          "supports": "Observed IMDb titles and short plot descriptions used in the explicit relationship judgment."
+        }
+      ]
+    },
+    {
+      "group_id": "singleton:tt0027977",
+      "name": "Modern Times",
+      "member_ids": [
+        "tt0027977"
+      ],
+      "members": [
+        {
+          "record_id": "tt0027977",
+          "title": "Modern Times",
+          "year": "1936"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0032553",
+      "name": "The Great Dictator",
+      "member_ids": [
+        "tt0032553"
+      ],
+      "members": [
+        {
+          "record_id": "tt0032553",
+          "title": "The Great Dictator",
+          "year": "1940"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0112573",
+      "name": "Braveheart",
+      "member_ids": [
+        "tt0112573"
+      ],
+      "members": [
+        {
+          "record_id": "tt0112573",
+          "title": "Braveheart",
+          "year": "1995"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0116629",
+      "name": "Independence Day",
+      "member_ids": [
+        "tt0116629"
+      ],
+      "members": [
+        {
+          "record_id": "tt0116629",
+          "title": "Independence Day",
+          "year": "1996"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0120338",
+      "name": "Titanic",
+      "member_ids": [
+        "tt0120338"
+      ],
+      "members": [
+        {
+          "record_id": "tt0120338",
+          "title": "Titanic",
+          "year": "1997"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0120591",
+      "name": "Armageddon",
+      "member_ids": [
+        "tt0120591"
+      ],
+      "members": [
+        {
+          "record_id": "tt0120591",
+          "title": "Armageddon",
+          "year": "1998"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0120616",
+      "name": "The Mummy",
+      "member_ids": [
+        "tt0120616"
+      ],
+      "members": [
+        {
+          "record_id": "tt0120616",
+          "title": "The Mummy",
+          "year": "1999"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0120815",
+      "name": "Saving Private Ryan",
+      "member_ids": [
+        "tt0120815"
+      ],
+      "members": [
+        {
+          "record_id": "tt0120815",
+          "title": "Saving Private Ryan",
+          "year": "1998"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0146316",
+      "name": "Lara Croft: Tomb Raider",
+      "member_ids": [
+        "tt0146316"
+      ],
+      "members": [
+        {
+          "record_id": "tt0146316",
+          "title": "Lara Croft: Tomb Raider",
+          "year": "2001"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0172495",
+      "name": "Gladiator",
+      "member_ids": [
+        "tt0172495"
+      ],
+      "members": [
+        {
+          "record_id": "tt0172495",
+          "title": "Gladiator",
+          "year": "2000"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0285331",
+      "name": "24",
+      "member_ids": [
+        "tt0285331"
+      ],
+      "members": [
+        {
+          "record_id": "tt0285331",
+          "title": "24",
+          "year": "2001"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0293429",
+      "name": "Mortal Kombat",
+      "member_ids": [
+        "tt0293429"
+      ],
+      "members": [
+        {
+          "record_id": "tt0293429",
+          "title": "Mortal Kombat",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0297162",
+      "name": "Half Past Dead",
+      "member_ids": [
+        "tt0297162"
+      ],
+      "members": [
+        {
+          "record_id": "tt0297162",
+          "title": "Half Past Dead",
+          "year": "2002"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0317303",
+      "name": "Daddy Day Care",
+      "member_ids": [
+        "tt0317303"
+      ],
+      "members": [
+        {
+          "record_id": "tt0317303",
+          "title": "Daddy Day Care",
+          "year": "2003"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0319262",
+      "name": "The Day After Tomorrow",
+      "member_ids": [
+        "tt0319262"
+      ],
+      "members": [
+        {
+          "record_id": "tt0319262",
+          "title": "The Day After Tomorrow",
+          "year": "2004"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0335345",
+      "name": "The Passion of the Christ",
+      "member_ids": [
+        "tt0335345"
+      ],
+      "members": [
+        {
+          "record_id": "tt0335345",
+          "title": "The Passion of the Christ",
+          "year": "2004"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0368578",
+      "name": "Are We There Yet?",
+      "member_ids": [
+        "tt0368578"
+      ],
+      "members": [
+        {
+          "record_id": "tt0368578",
+          "title": "Are We There Yet?",
+          "year": "2005"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0398808",
+      "name": "Bridge to Terabithia",
+      "member_ids": [
+        "tt0398808"
+      ],
+      "members": [
+        {
+          "record_id": "tt0398808",
+          "title": "Bridge to Terabithia",
+          "year": "2007"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0437800",
+      "name": "Akeelah and the Bee",
+      "member_ids": [
+        "tt0437800"
+      ],
+      "members": [
+        {
+          "record_id": "tt0437800",
+          "title": "Akeelah and the Bee",
+          "year": "2006"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0448157",
+      "name": "Hancock",
+      "member_ids": [
+        "tt0448157"
+      ],
+      "members": [
+        {
+          "record_id": "tt0448157",
+          "title": "Hancock",
+          "year": "2008"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0455275",
+      "name": "Prison Break",
+      "member_ids": [
+        "tt0455275"
+      ],
+      "members": [
+        {
+          "record_id": "tt0455275",
+          "title": "Prison Break",
+          "year": "2005"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0473075",
+      "name": "Prince of Persia: The Sands of Time",
+      "member_ids": [
+        "tt0473075"
+      ],
+      "members": [
+        {
+          "record_id": "tt0473075",
+          "title": "Prince of Persia: The Sands of Time",
+          "year": "2010"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0816692",
+      "name": "Interstellar",
+      "member_ids": [
+        "tt0816692"
+      ],
+      "members": [
+        {
+          "record_id": "tt0816692",
+          "title": "Interstellar",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0844653",
+      "name": "Legend of the Seeker",
+      "member_ids": [
+        "tt0844653"
+      ],
+      "members": [
+        {
+          "record_id": "tt0844653",
+          "title": "Legend of the Seeker",
+          "year": "2008"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0903747",
+      "name": "Breaking Bad",
+      "member_ids": [
+        "tt0903747"
+      ],
+      "members": [
+        {
+          "record_id": "tt0903747",
+          "title": "Breaking Bad",
+          "year": "2008"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0944835",
+      "name": "Salt",
+      "member_ids": [
+        "tt0944835"
+      ],
+      "members": [
+        {
+          "record_id": "tt0944835",
+          "title": "Salt",
+          "year": "2010"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0993840",
+      "name": "Army of the Dead",
+      "member_ids": [
+        "tt0993840"
+      ],
+      "members": [
+        {
+          "record_id": "tt0993840",
+          "title": "Army of the Dead",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt0993846",
+      "name": "The Wolf of Wall Street",
+      "member_ids": [
+        "tt0993846"
+      ],
+      "members": [
+        {
+          "record_id": "tt0993846",
+          "title": "The Wolf of Wall Street",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt10048342",
+      "name": "The Queen's Gambit",
+      "member_ids": [
+        "tt10048342"
+      ],
+      "members": [
+        {
+          "record_id": "tt10048342",
+          "title": "The Queen's Gambit",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt10062292",
+      "name": "Never Have I Ever",
+      "member_ids": [
+        "tt10062292"
+      ],
+      "members": [
+        {
+          "record_id": "tt10062292",
+          "title": "Never Have I Ever",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt10293938",
+      "name": "Outer Banks",
+      "member_ids": [
+        "tt10293938"
+      ],
+      "members": [
+        {
+          "record_id": "tt10293938",
+          "title": "Outer Banks",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt10813940",
+      "name": "Ginny & Georgia",
+      "member_ids": [
+        "tt10813940"
+      ],
+      "members": [
+        {
+          "record_id": "tt10813940",
+          "title": "Ginny & Georgia",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt10919420",
+      "name": "Squid Game",
+      "member_ids": [
+        "tt10919420"
+      ],
+      "members": [
+        {
+          "record_id": "tt10919420",
+          "title": "Squid Game",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt11083552",
+      "name": "Wrath of Man",
+      "member_ids": [
+        "tt11083552"
+      ],
+      "members": [
+        {
+          "record_id": "tt11083552",
+          "title": "Wrath of Man",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt11286314",
+      "name": "Don't Look Up",
+      "member_ids": [
+        "tt11286314"
+      ],
+      "members": [
+        {
+          "record_id": "tt11286314",
+          "title": "Don't Look Up",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1133985",
+      "name": "Green Lantern",
+      "member_ids": [
+        "tt1133985"
+      ],
+      "members": [
+        {
+          "record_id": "tt1133985",
+          "title": "Green Lantern",
+          "year": "2011"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1155076",
+      "name": "The Karate Kid",
+      "member_ids": [
+        "tt1155076"
+      ],
+      "members": [
+        {
+          "record_id": "tt1155076",
+          "title": "The Karate Kid",
+          "year": "2010"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt11564570",
+      "name": "Glass Onion",
+      "member_ids": [
+        "tt11564570"
+      ],
+      "members": [
+        {
+          "record_id": "tt11564570",
+          "title": "Glass Onion",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1190080",
+      "name": "2012",
+      "member_ids": [
+        "tt1190080"
+      ],
+      "members": [
+        {
+          "record_id": "tt1190080",
+          "title": "2012",
+          "year": "2009"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1199099",
+      "name": "Merlin",
+      "member_ids": [
+        "tt1199099"
+      ],
+      "members": [
+        {
+          "record_id": "tt1199099",
+          "title": "Merlin",
+          "year": "2008"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt12324366",
+      "name": "Percy Jackson and the Olympians",
+      "member_ids": [
+        "tt12324366"
+      ],
+      "members": [
+        {
+          "record_id": "tt12324366",
+          "title": "Percy Jackson and the Olympians",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1267297",
+      "name": "Hercules",
+      "member_ids": [
+        "tt1267297"
+      ],
+      "members": [
+        {
+          "record_id": "tt1267297",
+          "title": "Hercules",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1295085",
+      "name": "Gifted Hands: The Ben Carson Story",
+      "member_ids": [
+        "tt1295085"
+      ],
+      "members": [
+        {
+          "record_id": "tt1295085",
+          "title": "Gifted Hands: The Ben Carson Story",
+          "year": "2009"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1312171",
+      "name": "The Umbrella Academy",
+      "member_ids": [
+        "tt1312171"
+      ],
+      "members": [
+        {
+          "record_id": "tt1312171",
+          "title": "The Umbrella Academy",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1320253",
+      "name": "The Expendables",
+      "member_ids": [
+        "tt1320253"
+      ],
+      "members": [
+        {
+          "record_id": "tt1320253",
+          "title": "The Expendables",
+          "year": "2010"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt13406094",
+      "name": "The White Lotus",
+      "member_ids": [
+        "tt13406094"
+      ],
+      "members": [
+        {
+          "record_id": "tt13406094",
+          "title": "The White Lotus",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt13443470",
+      "name": "Wednesday",
+      "member_ids": [
+        "tt13443470"
+      ],
+      "members": [
+        {
+          "record_id": "tt13443470",
+          "title": "Wednesday",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1375666",
+      "name": "Inception",
+      "member_ids": [
+        "tt1375666"
+      ],
+      "members": [
+        {
+          "record_id": "tt1375666",
+          "title": "Inception",
+          "year": "2010"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt14169960",
+      "name": "All of Us Are Dead",
+      "member_ids": [
+        "tt14169960"
+      ],
+      "members": [
+        {
+          "record_id": "tt14169960",
+          "title": "All of Us Are Dead",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1424310",
+      "name": "Chinese Zodiac",
+      "member_ids": [
+        "tt1424310"
+      ],
+      "members": [
+        {
+          "record_id": "tt1424310",
+          "title": "Chinese Zodiac",
+          "year": "2012"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1462764",
+      "name": "Indiana Jones and the Dial of Destiny",
+      "member_ids": [
+        "tt1462764"
+      ],
+      "members": [
+        {
+          "record_id": "tt1462764",
+          "title": "Indiana Jones and the Dial of Destiny",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1485796",
+      "name": "The Greatest Showman",
+      "member_ids": [
+        "tt1485796"
+      ],
+      "members": [
+        {
+          "record_id": "tt1485796",
+          "title": "The Greatest Showman",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt15398776",
+      "name": "Oppenheimer",
+      "member_ids": [
+        "tt15398776"
+      ],
+      "members": [
+        {
+          "record_id": "tt15398776",
+          "title": "Oppenheimer",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1598778",
+      "name": "Contagion",
+      "member_ids": [
+        "tt1598778"
+      ],
+      "members": [
+        {
+          "record_id": "tt1598778",
+          "title": "Contagion",
+          "year": "2011"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1631867",
+      "name": "Edge of Tomorrow",
+      "member_ids": [
+        "tt1631867"
+      ],
+      "members": [
+        {
+          "record_id": "tt1631867",
+          "title": "Edge of Tomorrow",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1632701",
+      "name": "Suits",
+      "member_ids": [
+        "tt1632701"
+      ],
+      "members": [
+        {
+          "record_id": "tt1632701",
+          "title": "Suits",
+          "year": "2011"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1649418",
+      "name": "The Gray Man",
+      "member_ids": [
+        "tt1649418"
+      ],
+      "members": [
+        {
+          "record_id": "tt1649418",
+          "title": "The Gray Man",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1751634",
+      "name": "The Sandman",
+      "member_ids": [
+        "tt1751634"
+      ],
+      "members": [
+        {
+          "record_id": "tt1751634",
+          "title": "The Sandman",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1790864",
+      "name": "The Maze Runner",
+      "member_ids": [
+        "tt1790864"
+      ],
+      "members": [
+        {
+          "record_id": "tt1790864",
+          "title": "The Maze Runner",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1837492",
+      "name": "13 Reasons Why",
+      "member_ids": [
+        "tt1837492"
+      ],
+      "members": [
+        {
+          "record_id": "tt1837492",
+          "title": "13 Reasons Why",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt1856010",
+      "name": "House of Cards",
+      "member_ids": [
+        "tt1856010"
+      ],
+      "members": [
+        {
+          "record_id": "tt1856010",
+          "title": "House of Cards",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2119532",
+      "name": "Hacksaw Ridge",
+      "member_ids": [
+        "tt2119532"
+      ],
+      "members": [
+        {
+          "record_id": "tt2119532",
+          "title": "Hacksaw Ridge",
+          "year": "2016"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2231461",
+      "name": "Rampage",
+      "member_ids": [
+        "tt2231461"
+      ],
+      "members": [
+        {
+          "record_id": "tt2231461",
+          "title": "Rampage",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2302755",
+      "name": "Olympus Has Fallen",
+      "member_ids": [
+        "tt2302755"
+      ],
+      "members": [
+        {
+          "record_id": "tt2302755",
+          "title": "Olympus Has Fallen",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2334879",
+      "name": "White House Down",
+      "member_ids": [
+        "tt2334879"
+      ],
+      "members": [
+        {
+          "record_id": "tt2334879",
+          "title": "White House Down",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2403776",
+      "name": "Shadow and Bone",
+      "member_ids": [
+        "tt2403776"
+      ],
+      "members": [
+        {
+          "record_id": "tt2403776",
+          "title": "Shadow and Bone",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2404233",
+      "name": "Gods of Egypt",
+      "member_ids": [
+        "tt2404233"
+      ],
+      "members": [
+        {
+          "record_id": "tt2404233",
+          "title": "Gods of Egypt",
+          "year": "2016"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2442560",
+      "name": "Peaky Blinders",
+      "member_ids": [
+        "tt2442560"
+      ],
+      "members": [
+        {
+          "record_id": "tt2442560",
+          "title": "Peaky Blinders",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2531336",
+      "name": "Lupin",
+      "member_ids": [
+        "tt2531336"
+      ],
+      "members": [
+        {
+          "record_id": "tt2531336",
+          "title": "Lupin",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2632424",
+      "name": "The Originals",
+      "member_ids": [
+        "tt2632424"
+      ],
+      "members": [
+        {
+          "record_id": "tt2632424",
+          "title": "The Originals",
+          "year": "2013"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt2872732",
+      "name": "Lucy",
+      "member_ids": [
+        "tt2872732"
+      ],
+      "members": [
+        {
+          "record_id": "tt2872732",
+          "title": "Lucy",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt3007572",
+      "name": "Locke & Key",
+      "member_ids": [
+        "tt3007572"
+      ],
+      "members": [
+        {
+          "record_id": "tt3007572",
+          "title": "Locke & Key",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt3076658",
+      "name": "Creed",
+      "member_ids": [
+        "tt3076658"
+      ],
+      "members": [
+        {
+          "record_id": "tt3076658",
+          "title": "Creed",
+          "year": "2015"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt3107288",
+      "name": "The Flash",
+      "member_ids": [
+        "tt3107288"
+      ],
+      "members": [
+        {
+          "record_id": "tt3107288",
+          "title": "The Flash",
+          "year": "2014"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt31193180",
+      "name": "Sinners",
+      "member_ids": [
+        "tt31193180"
+      ],
+      "members": [
+        {
+          "record_id": "tt31193180",
+          "title": "Sinners",
+          "year": "2025"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt31450459",
+      "name": "Digger",
+      "member_ids": [
+        "tt31450459"
+      ],
+      "members": [
+        {
+          "record_id": "tt31450459",
+          "title": "Digger",
+          "year": "2026"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt32393988",
+      "name": "Insidious: Out of the Further",
+      "member_ids": [
+        "tt32393988"
+      ],
+      "members": [
+        {
+          "record_id": "tt32393988",
+          "title": "Insidious: Out of the Further",
+          "year": "2026"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt33764258",
+      "name": "The Odyssey",
+      "member_ids": [
+        "tt33764258"
+      ],
+      "members": [
+        {
+          "record_id": "tt33764258",
+          "title": "The Odyssey",
+          "year": "2026"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt3581920",
+      "name": "The Last of Us",
+      "member_ids": [
+        "tt3581920"
+      ],
+      "members": [
+        {
+          "record_id": "tt3581920",
+          "title": "The Last of Us",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt37510326",
+      "name": "The Social Reckoning",
+      "member_ids": [
+        "tt37510326"
+      ],
+      "members": [
+        {
+          "record_id": "tt37510326",
+          "title": "The Social Reckoning",
+          "year": "2026"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4052886",
+      "name": "Lucifer",
+      "member_ids": [
+        "tt4052886"
+      ],
+      "members": [
+        {
+          "record_id": "tt4052886",
+          "title": "Lucifer",
+          "year": "2016"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4154664",
+      "name": "Captain Marvel",
+      "member_ids": [
+        "tt4154664"
+      ],
+      "members": [
+        {
+          "record_id": "tt4154664",
+          "title": "Captain Marvel",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4154796",
+      "name": "Avengers: Endgame",
+      "member_ids": [
+        "tt4154796"
+      ],
+      "members": [
+        {
+          "record_id": "tt4154796",
+          "title": "Avengers: Endgame",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4270492",
+      "name": "Billions",
+      "member_ids": [
+        "tt4270492"
+      ],
+      "members": [
+        {
+          "record_id": "tt4270492",
+          "title": "Billions",
+          "year": "2016"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4574334",
+      "name": "Stranger Things",
+      "member_ids": [
+        "tt4574334"
+      ],
+      "members": [
+        {
+          "record_id": "tt4574334",
+          "title": "Stranger Things",
+          "year": "2016"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt4919268",
+      "name": "Bad Boys: Ride or Die",
+      "member_ids": [
+        "tt4919268"
+      ],
+      "members": [
+        {
+          "record_id": "tt4919268",
+          "title": "Bad Boys: Ride or Die",
+          "year": "2024"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5057054",
+      "name": "Jack Ryan",
+      "member_ids": [
+        "tt5057054"
+      ],
+      "members": [
+        {
+          "record_id": "tt5057054",
+          "title": "Jack Ryan",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5071412",
+      "name": "Ozark",
+      "member_ids": [
+        "tt5071412"
+      ],
+      "members": [
+        {
+          "record_id": "tt5071412",
+          "title": "Ozark",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5090568",
+      "name": "Transformers: Rise of the Beasts",
+      "member_ids": [
+        "tt5090568"
+      ],
+      "members": [
+        {
+          "record_id": "tt5090568",
+          "title": "Transformers: Rise of the Beasts",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5180504",
+      "name": "The Witcher",
+      "member_ids": [
+        "tt5180504"
+      ],
+      "members": [
+        {
+          "record_id": "tt5180504",
+          "title": "The Witcher",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5420376",
+      "name": "Riverdale",
+      "member_ids": [
+        "tt5420376"
+      ],
+      "members": [
+        {
+          "record_id": "tt5420376",
+          "title": "Riverdale",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt5758778",
+      "name": "Skyscraper",
+      "member_ids": [
+        "tt5758778"
+      ],
+      "members": [
+        {
+          "record_id": "tt5758778",
+          "title": "Skyscraper",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6076336",
+      "name": "Greenhouse Academy",
+      "member_ids": [
+        "tt6076336"
+      ],
+      "members": [
+        {
+          "record_id": "tt6076336",
+          "title": "Greenhouse Academy",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6128300",
+      "name": "Dynasty",
+      "member_ids": [
+        "tt6128300"
+      ],
+      "members": [
+        {
+          "record_id": "tt6128300",
+          "title": "Dynasty",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6468322",
+      "name": "Money Heist",
+      "member_ids": [
+        "tt6468322"
+      ],
+      "members": [
+        {
+          "record_id": "tt6468322",
+          "title": "Money Heist",
+          "year": "2017"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6472976",
+      "name": "Five Feet Apart",
+      "member_ids": [
+        "tt6472976"
+      ],
+      "members": [
+        {
+          "record_id": "tt6472976",
+          "title": "Five Feet Apart",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6528290",
+      "name": "Knights of the Zodiac",
+      "member_ids": [
+        "tt6528290"
+      ],
+      "members": [
+        {
+          "record_id": "tt6528290",
+          "title": "Knights of the Zodiac",
+          "year": "2023"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt6723592",
+      "name": "Tenet",
+      "member_ids": [
+        "tt6723592"
+      ],
+      "members": [
+        {
+          "record_id": "tt6723592",
+          "title": "Tenet",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7018644",
+      "name": "Grown-ish",
+      "member_ids": [
+        "tt7018644"
+      ],
+      "members": [
+        {
+          "record_id": "tt7018644",
+          "title": "Grown-ish",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7221388",
+      "name": "Cobra Kai",
+      "member_ids": [
+        "tt7221388"
+      ],
+      "members": [
+        {
+          "record_id": "tt7221388",
+          "title": "Cobra Kai",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7286456",
+      "name": "Joker",
+      "member_ids": [
+        "tt7286456"
+      ],
+      "members": [
+        {
+          "record_id": "tt7286456",
+          "title": "Joker",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7335184",
+      "name": "You",
+      "member_ids": [
+        "tt7335184"
+      ],
+      "members": [
+        {
+          "record_id": "tt7335184",
+          "title": "You",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7462410",
+      "name": "The Wheel of Time",
+      "member_ids": [
+        "tt7462410"
+      ],
+      "members": [
+        {
+          "record_id": "tt7462410",
+          "title": "The Wheel of Time",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7550000",
+      "name": "Project Power",
+      "member_ids": [
+        "tt7550000"
+      ],
+      "members": [
+        {
+          "record_id": "tt7550000",
+          "title": "Project Power",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7556122",
+      "name": "The Old Guard",
+      "member_ids": [
+        "tt7556122"
+      ],
+      "members": [
+        {
+          "record_id": "tt7556122",
+          "title": "The Old Guard",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7660850",
+      "name": "Succession",
+      "member_ids": [
+        "tt7660850"
+      ],
+      "members": [
+        {
+          "record_id": "tt7660850",
+          "title": "Succession",
+          "year": "2018"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7767422",
+      "name": "Sex Education",
+      "member_ids": [
+        "tt7767422"
+      ],
+      "members": [
+        {
+          "record_id": "tt7767422",
+          "title": "Sex Education",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt7991608",
+      "name": "Red Notice",
+      "member_ids": [
+        "tt7991608"
+      ],
+      "members": [
+        {
+          "record_id": "tt7991608",
+          "title": "Red Notice",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt8106534",
+      "name": "6 Underground",
+      "member_ids": [
+        "tt8106534"
+      ],
+      "members": [
+        {
+          "record_id": "tt8106534",
+          "title": "6 Underground",
+          "year": "2019"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt8354062",
+      "name": "One of Us Is Lying",
+      "member_ids": [
+        "tt8354062"
+      ],
+      "members": [
+        {
+          "record_id": "tt8354062",
+          "title": "One of Us Is Lying",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt8740790",
+      "name": "Bridgerton",
+      "member_ids": [
+        "tt8740790"
+      ],
+      "members": [
+        {
+          "record_id": "tt8740790",
+          "title": "Bridgerton",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt8962124",
+      "name": "Emily in Paris",
+      "member_ids": [
+        "tt8962124"
+      ],
+      "members": [
+        {
+          "record_id": "tt8962124",
+          "title": "Emily in Paris",
+          "year": "2020"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt9140554",
+      "name": "Loki",
+      "member_ids": [
+        "tt9140554"
+      ],
+      "members": [
+        {
+          "record_id": "tt9140554",
+          "title": "Loki",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt9140560",
+      "name": "WandaVision",
+      "member_ids": [
+        "tt9140560"
+      ],
+      "members": [
+        {
+          "record_id": "tt9140560",
+          "title": "WandaVision",
+          "year": "2021"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    },
+    {
+      "group_id": "singleton:tt9419884",
+      "name": "Doctor Strange in the Multiverse of Madness",
+      "member_ids": [
+        "tt9419884"
+      ],
+      "members": [
+        {
+          "record_id": "tt9419884",
+          "title": "Doctor Strange in the Multiverse of Madness",
+          "year": "2022"
+        }
+      ],
+      "relation": "No relation assigned by the conservative reviewed rules; singleton does not establish true franchise independence.",
+      "relation_rules": [],
+      "evidence": []
+    }
+  ],
+  "overlap_unions": [],
+  "statistics": {
+    "eligible_title_count": 204,
+    "reviewed_multi_title_relation_rule_count": 31,
+    "group_count": 146,
+    "multi_title_group_count": 31,
+    "singleton_group_count": 115,
+    "titles_in_multi_title_groups": 89,
+    "largest_group_size": 11,
+    "group_size_distribution": {
+      "1": 115,
+      "2": 17,
+      "3": 9,
+      "4": 3,
+      "5": 1,
+      "11": 1
+    },
+    "overlap_unions_required": 0
+  },
+  "limitations": [
+    "The rule set is conservative and incomplete. Shared universes, crossovers, retellings and characters can cross these group boundaries; a singleton can still be related to another title.",
+    "For example, Avengers, Loki, WandaVision and Doctor Strange can share a universe with narrow Marvel movie groups; this manifest does not claim to isolate that full universe. Deadpool & Wolverine has a crossover relation to X-Men that is not automatically expanded here.",
+    "The Dark Knight versus Superman/Justice League distinction intentionally preserves reviewed film-continuity groups, even though the Batman character can still recur across them.",
+    "Related-work-held-out results using this manifest test robustness to these explicit relation rules, not performance on every wholly unseen franchise.",
+    "Grouping can change fold composition and label balance. The training/evaluation owner must report per-fold support and ensure train/test group disjointness after splitting.",
+    "No external family metadata or exhaustive franchise ontology was collected; manual title and synopsis judgments remain documented assumptions."
+  ],
+  "revision_provenance": {
+    "previous_manifest": "data/interim/franchise_groups.json",
+    "previous_sha256": "56dc56c952b4851671cff5b291a8e77d7674e60446aa881347ab15dc3a9332e9",
+    "change": "Restore tt35538033 and replace tt0120804 singleton with a two-work same-property adaptation group; all other group assignments unchanged.",
+    "user_authority_date": "2026-10-18"
+  }
+}
